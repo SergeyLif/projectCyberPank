@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+ @font-face {  /* для работы с шрифтами  */
+    font-family: "Archangelsk";
+    src: local("Archangelsk Regular"),
+     url(/fonts/Archangelsk.woff) format("woff"),
+     url(/fonts/Archangelsk.woff2) format("woff2"),
+     url(/fonts/Archangelsk.svg) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: inherit;  /* чтобы наследовалось значение у родителя */
+}
+
+  body {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.89;   /* 189% */
+    font-weight: 400;
+    margin: 0;
+  }
+
+
+  a {
+    color: inherit;   /* наследоваться у родителя */
+    text-decoration: none; /* убираем подчеркивание */
+  } 
+
+
+  li {
+    list-style-type: none;
+  }
+
+

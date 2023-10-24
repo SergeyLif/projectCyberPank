@@ -1,0 +1,107 @@
+.buy-game {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.background-discks {
+    background-image: url(/img/discs-CP-1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 50%;
+}
+
+
+.full-list-set {
+    width: 50%;
+    background: #000;
+    color: #FFF;
+    padding-left: 32px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container-for-buy-cb {
+    max-width: 500px;
+    width: 100%;
+}
+
+.title-buy-the-game {
+    font-family: Archangelsk;
+    font-size: 3.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.blue-another-words {
+    color: #52BEDC;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+
+.container-grid-for-pack-of-game {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px 10px;
+    max-width: 470px;
+    width: 100%;
+}
+
+
+.description-text-buy-game {
+    margin-top: 0px;
+}
+
+.platforms {
+    max-width: 345px;
+    width: 100%;
+}
+
+.choose-platforms {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    padding-left: 0;
+}
+.in-div-platforms {
+    margin-bottom: 25px;
+}
+
+
+
+@media (max-width: 650px) {
+
+    .buy-game {
+        flex-direction: column;
+    }
+
+    .background-discks {
+        width: 100%;
+        height:30%;
+    }
+
+    .title-buy-the-game {
+        font-size: 1.875rem;
+    }
+
+    .description-text-buy-game {
+        font-size: 1rem;
+        margin-block-end: 0;
+    }
+
+    .full-list-set  {
+        width: 100%;
+        height:70%;
+        padding-top: 4.5vh;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+  
+}

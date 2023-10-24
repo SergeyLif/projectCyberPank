@@ -1,0 +1,187 @@
+.separator-line-yellow {
+    background-image: url(/img/background-yellow-line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 4.375rem;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+
+.yellow-background {
+    background: #F8F200;
+
+}
+
+.advantages-HP {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-left: 16.6vw;
+    margin-right: 16.6vw;
+    /*    верхний, правый, нижний и левый отступы */
+}
+
+.learn-more {
+    display: inline-flex;
+    height: 60px;
+    padding: 15px 50px;
+    align-items: center;
+    gap: 10px;
+    background: #000;
+    color: #F8F200;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    margin-top: 30px;
+}
+
+.wrapper-flex-photo-text {
+    display: flex;
+    gap: 35px;
+}
+
+.screen-with-roboGirl-and-logs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+
+}
+
+.list-HP-pictures {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+
+.immersion-list {
+    margin-block-start: 0
+}
+
+.immersion-title {
+    color: #000;
+    font-family: Archangelsk;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: 3.875rem;
+    max-width: 560px;
+    width: 100%;
+    padding-bottom: 1.5625rem;
+}
+
+.immersion-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 34px;
+    max-width: 625px;
+    width: 100%;
+    margin-inline-start: 0;
+}
+
+.immersion-title-for-picture {
+    margin-inline-start: 0;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container-grid-for-immersion {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* Две колонки с автоматической шириной, зависящей от содержимого */
+    max-width: 390px;
+    width: 100%;
+    grid-gap: 15px 10px;
+    /* Отступы между рядами 15px и между колонами 10px */
+}
+
+
+.immersion-title-for-picture {
+    margin-inline-start: 0;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 8px;
+    margin-block-end: 0px
+}
+
+.HP-pictures {
+    max-width: 550px;
+    width: 100%;
+}
+
+
+.cross {
+    align-self: center;
+}
+
+@media (max-width: 729px) {
+
+    .advantages-HP {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .wrapper-flex-photo-text {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .screen-with-roboGirl-and-logs {
+        align-items: flex-start;
+    }
+
+    .list-HP-pictures {
+        flex-direction: row;
+        padding-inline-start: 0;
+        gap: 15px;
+    }
+
+    .immersion-title {
+        font-size: 1.875rem;
+    }
+
+    .immersion-description {
+        font-size: 1rem;
+    }
+
+    .immersion-title-for-picture {
+        font-size: 1rem;
+    }
+
+    .learn-more {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media  (min-width: 730px) and  (max-width:1024px)  {
+
+    .advantages-HP {
+        margin-left: 3.9vw;
+        margin-right: 3.9vw;
+    }
+
+    .screen-with-roboGirl-and-logs {
+        margin-top: 4.46%;
+    }
+
+    .list-HP-pictures {
+        flex-direction: column;
+        align-items: center;
+        padding-inline-start: 0;
+        margin: 0;
+    }
+}
+
+

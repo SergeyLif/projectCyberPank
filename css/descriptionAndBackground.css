@@ -1,0 +1,205 @@
+.background {
+    background-image: url(/img/main-man-2560.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* полностью покрывало заданный элемент (например, блок или контейнер) и при этом сохраняло соотношение сторон. */
+    background-position: center;
+    background-color: lightgray 50%;
+
+}
+
+/* мы могли просто прописать height, . Но благодаря  min-height у нас высота элемента будет меняться динамически, а не будет оставатсья статической.  */
+.promo-inner {
+    min-height: 100vh;/*   100vh - означает 100% от экрана пользователя  */
+    display: flex;
+    align-items: flex-end;/* выравнивание содержимого по нижнему краю */
+    justify-content: flex-end;
+}
+
+
+
+.yellow-info {
+    position: relative;
+    background-color: #F8F200;
+    clip-path: polygon(10% 0, 100% 0, 100% 20%, 100% 90%, 90% 100%, 0 100%, 0% 80%, 0 10%);
+    max-width: 630px;
+    padding: 70px;
+    z-index: 5;
+    margin-right: 17%;
+}
+
+.available-info {
+    color: #000;
+    font-family: Archangelsk;
+    font-size: 3.88rem; /* умножить на 3.88 */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.black-blackground {
+    background-color: #000;
+    display: inline-flex; /*создает контейнер, который одновременно является строчным элементом (inline) и flex-контейнером (flex) */
+    padding: 19px 50px;
+    align-items: center;
+}
+
+.info-more {
+    color: #F8F200;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+.description {
+    margin-left: 16.6vw; 
+    margin-right: 16.6vw; 
+}
+
+.night-city {
+    font-family: Archangelsk;
+    color: #000;
+    font-size: 62.08px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1.5625rem;
+}
+
+.description-text {
+    color: #777;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+    max-width: 59.5rem;
+}
+
+
+.blue-words {
+    color: #52BEDC;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.container-with-photos {
+    margin-top: 70px;
+    display: flex;
+    gap: 32px;
+}
+
+
+.description-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-inline-start: 0rem;
+    margin-top: auto;
+}
+
+.container-with-photos img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+@media (max-width:1024px) and (min-width: 500px) {
+    .yellow-info {
+        margin-right: 3%;
+    }
+
+    .available-info {
+        font-size: 1.875rem;
+        max-width: 320px;
+    }
+
+    .info-more {
+        font-size: 1.25rem
+    }
+
+    .description {
+        margin-left: 3.9vw; 
+        margin-right: 3.9vw; 
+    }
+
+    .night-city {
+        max-width: 620px;
+        width: 100%;
+    }
+
+    .description-text {
+        max-width: 790px;
+        width: 100%;
+    }
+
+    .container-with-photos {
+        flex-direction: column;
+    }
+    
+    .description-photos {
+        flex-direction: row;
+        gap: 32px;
+    }
+}
+
+
+@media (max-width: 499px) {
+
+    .yellow-info {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100vw;
+        padding: 30px 13px 30px 13px;/*top right, bottom left; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .black-blackground {
+        max-width: 244px;
+        width: 100%;
+    }
+
+    .wrapper-for-available-info {
+        max-width: 420px;
+        width: 100%;
+    }
+
+    .available-info {
+        font-size: 1.875rem;
+        text-align: center;
+    }
+
+    .info-more {
+        font-size: 1.125rem;
+    }
+
+    .description {
+        margin-left: 12px; 
+        margin-right: 12px;
+    }
+
+    .night-city {
+       font-size: 1.875rem;
+    }
+    
+    .description-text {
+        font-size: 1rem;
+    }
+
+    .container-with-photos {
+        flex-direction: column;
+        gap: 0;
+    }
+}
