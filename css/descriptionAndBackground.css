@@ -1,8 +1,7 @@
 .background {
-    background-image: url(/img/main-man-2560.jpg);
+    background-image: url(/imginWEBAPIformat/main-man-2560.webp);
     background-repeat: no-repeat;
-    background-size: cover;
-    /* полностью покрывало заданный элемент (например, блок или контейнер) и при этом сохраняло соотношение сторон. */
+    background-size: cover; /* полностью покрывало заданный элемент (например, блок или контейнер) и при этом сохраняло соотношение сторон. */
     background-position: center;
     background-color: lightgray 50%;
 
