@@ -95,12 +95,10 @@
 
 .container-grid-for-immersion {
     display: grid;
-    grid-template-columns: auto auto;
-    /* Две колонки с автоматической шириной, зависящей от содержимого */
+    grid-template-columns: auto auto;  /* Две колонки с автоматической шириной, зависящей от содержимого */
     max-width: 390px;
     width: 100%;
-    grid-gap: 15px 10px;
-    /* Отступы между рядами 15px и между колонами 10px */
+    grid-gap: 15px 10px; /* Отступы между рядами 15px и между колонами 10px */
 }
 
 
@@ -124,7 +122,28 @@
     align-self: center;
 }
 
-@media (max-width: 729px) {
+
+@media  (min-width:910px) and (max-width:1224px)  {
+
+    .advantages-HP {
+        margin-left: 3.9vw;
+        margin-right: 3.9vw;
+    }
+
+    .screen-with-roboGirl-and-logs {
+        margin-top: 4.46%;
+    }
+
+    .list-HP-pictures {
+        flex-direction: column;
+        align-items: center;
+        padding-inline-start: 0;
+        margin: 0;
+    }
+}
+
+
+@media  (max-width: 909px) {
 
     .advantages-HP {
         margin-left: 12px;
@@ -162,26 +181,29 @@
         font-size: 1rem;
     }
 
-}
+   }
 
 
-@media  (min-width: 730px) and  (max-width:1024px)  {
 
-    .advantages-HP {
-        margin-left: 3.9vw;
-        margin-right: 3.9vw;
+
+   @media (max-width: 340px) {
+
+    .screen-with-roboGirl-and-logs img {
+        width: 100%;  /* Заставляет изображение занимать всю ширину родительского элемента */
+        max-width: 100%;  /* Ограничивает максимальную ширину изображения */
+        height: auto;  /* Позволяет высоте изображения подстраиваться пропорционально ширине */
     }
 
-    .screen-with-roboGirl-and-logs {
-        margin-top: 4.46%;
-    }
-
-    .list-HP-pictures {
-        flex-direction: column;
-        align-items: center;
-        padding-inline-start: 0;
-        margin: 0;
+    .hp-item .cross {
+        align-self: center;
     }
 }
 
 
+
+@media (max-width:280px) { 
+
+    .learn-more {
+        max-width: 100%;
+    }
+}

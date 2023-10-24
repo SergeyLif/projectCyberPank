@@ -47,10 +47,11 @@
 
 
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
 
     .last-info {
         flex-direction: column;
+        padding-bottom: 0;
     }
 
     .official-info {
