@@ -1,7 +1,7 @@
 let backgroundPictures = [
-  '../imginWEBAPIformat/main-man-2560.webp',
-  '../img/manAndCarBackground.jpg',
-  '../img/motoBackrgound.jpg'
+  '/imginWEBAPIformat/main-man-2560.webp',
+  '/img/manAndCarBackground.jpg',
+  '/img/motoBackrgound.jpg'
 ]
 
 let count = 0;
