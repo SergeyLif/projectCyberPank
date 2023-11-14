@@ -2,15 +2,14 @@
     width: 100%;
     height: 4.375rem;
     margin-top: 4.375rem;
-    background-image: url(/imginWEBAPIformat/separator-line.webp);
+    background-image: url(../imginWEBAPIformat/separator-line.webp);
     background-repeat: no-repeat;
-    background-size: cover;/* Растягиваем изображение на весь блок */
+    background-size: cover;
 }
 
 .background-black {
     background: #000;
 }
-
 
 .play-and-win {
     margin-left: 16.6vw;
@@ -23,8 +22,6 @@
 .wrapper-text-play-and-win {
     max-width: 570px;
     width: 100%;
-    /* display: flex;
-    justify-content: flex-start; */
 }
 
 .play-and-win-header {
@@ -35,8 +32,6 @@
     font-size: 3.625rem;
     font-weight: 400;
 }
-
-
 
 .description-promotion {
     color: #FFF;
@@ -64,12 +59,11 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    cursor: pointer;
 }
 
-
 .form-input.form-file {
-    display: none;
-    /* скрыть input то есть стандартную кнопку */
+    display: none; 
 }
 
 
@@ -91,9 +85,8 @@
 
 .divider {
     width: 100%;
-    max-width: 28.75rem;
-    /* это ограничит максимальную ширину до 28.75rem */
-    height: .0625rem;
+    max-width: 460px; 
+    height: 1px;
     background: #777;
     margin-top: 13px;
     margin-bottom: 35px;
@@ -142,12 +135,6 @@
     align-self: center;
 }
 
-
-
-/*     object-fit: cover; Применяем только к тегу img картинка без нарушения пропорций заполнит всю доступную область, обрезая всё ненужное */
-
-
-
 .wrapper-for-input-and-picture {
     display: flex;
     gap: 32px;
@@ -160,20 +147,18 @@
     object-fit: cover;
 }
 
-
 .ps-xbox-pictures {
     padding-inline-start: 0px
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1501px) {
     .ps-xbox-pictures {
         display: flex;
         flex-direction: row;
     }
 }
 
-
-@media (max-width:1023px) and (min-width:500px) {
+@media (max-width:1500px) and (min-width:700px) {
 
     .play-and-win {
         display: flex;
@@ -192,9 +177,7 @@
     }
 }
 
-
-
-@media (max-width:499px) {
+@media (max-width:699px) {
 
     .play-and-win-header {
         font-size: 1.875rem;
@@ -217,7 +200,6 @@
         justify-content: space-between;
     }
 
-
 }
 
 @media (max-width:280px) {
@@ -232,6 +214,3 @@
 }
 
 
-/* .file-wraper  {
-        font-size: 1rem;
-    }

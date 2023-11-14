@@ -1,21 +1,19 @@
 .background {
-    background-image: url(/imginWEBAPIformat/main-man-2560.webp);
+    background-image: url(../imginWEBAPIformat/main-man-2560.webp);
+    transition: background-image 0.3s; 
     background-repeat: no-repeat;
-    background-size: cover; /* полностью покрывало заданный элемент (например, блок или контейнер) и при этом сохраняло соотношение сторон. */
+    background-size: cover; 
     background-position: center;
     background-color: lightgray 50%;
-
 }
 
-/* мы могли просто прописать height, . Но благодаря  min-height у нас высота элемента будет меняться динамически, а не будет оставатсья статической.  */
+
 .promo-inner {
-    min-height: 100vh;/*   100vh - означает 100% от экрана пользователя  */
+    min-height: 100vh;
     display: flex;
-    align-items: flex-end;/* выравнивание содержимого по нижнему краю */
+    align-items: flex-end;
     justify-content: flex-end;
 }
-
-
 
 .yellow-info {
     position: relative;
@@ -30,7 +28,7 @@
 .available-info {
     color: #000;
     font-family: Archangelsk;
-    font-size: 3.88rem; /* умножить на 3.88 */
+    font-size: 3.88rem; 
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -39,9 +37,10 @@
     margin-bottom: 25px;
 }
 
+
 .black-blackground {
     background-color: #000;
-    display: inline-flex; /*создает контейнер, который одновременно является строчным элементом (inline) и flex-контейнером (flex) */
+    display: inline-flex; 
     padding: 19px 50px;
     align-items: center;
 }
@@ -52,8 +51,8 @@
     font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;
+    transition: all 0.2s ease;
 }
-
 
 .description {
     margin-left: 16.6vw; 
@@ -80,7 +79,6 @@
     max-width: 59.5rem;
 }
 
-
 .blue-words {
     color: #52BEDC;
     font-family: Roboto;
@@ -95,7 +93,6 @@
     gap: 32px;
 }
 
-
 .description-photos {
     display: flex;
     flex-direction: column;
@@ -108,12 +105,10 @@
 .container-with-photos img {
     max-width: 100%;
     height: auto;
-}
+} 
 
+@media (max-width:1100px) and (min-width: 600px) {
 
-
-
-@media (max-width:1500px) and (min-width: 500px) {
     .yellow-info {
         margin-right: 3%;
     }
@@ -149,17 +144,19 @@
     .description-photos {
         flex-direction: row;
         gap: 32px;
+        justify-content: flex-start;
     }
+ 
 }
 
 
-@media (max-width: 499px) {
+@media (max-width: 599px) {
 
     .yellow-info {
         margin-right: 0;
         margin-left: 0;
         width: 100vw;
-        padding: 30px 13px 30px 13px;/*top right, bottom left; */
+        padding: 30px 13px 30px 13px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -198,7 +195,11 @@
     }
 
     .container-with-photos {
+        margin-top: 40px;
         flex-direction: column;
         gap: 0;
+    }
+    .item-photos {
+        width: 100%;
     }
 }

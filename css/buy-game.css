@@ -3,15 +3,13 @@
     flex-direction: row;
 }
 
-
 .background-discks {
-    background-image: url(/img/discs-CP-1920.jpg);
+    background-image: url(../img/discs-CP-1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     width: 50%;
 }
-
 
 .full-list-set {
     width: 50%;
@@ -45,7 +43,6 @@
     margin-bottom: 15px;
 }
 
-
 .container-grid-for-pack-of-game {
     display: grid;
     grid-template-columns: auto auto;
@@ -53,7 +50,6 @@
     max-width: 470px;
     width: 100%;
 }
-
 
 .description-text-buy-game {
     margin-top: 0px;
@@ -77,7 +73,7 @@
 
 @media (min-width: 600px) and (max-width: 1100px) {
     .background-discks {
-        background-image: url(/img1024/background-discs-1024.svg);
+        background-image: url(../img1024/background-discs-1024.svg);
         width: 30%;
         background-position: center;
     }
