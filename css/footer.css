@@ -45,6 +45,10 @@
     font-weight: 400;
 }
 
+.footer-text:hover {
+    text-decoration: underline;
+}
+
 
 
 @media (max-width: 900px) {
