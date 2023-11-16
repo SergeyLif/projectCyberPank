@@ -43,6 +43,12 @@
     display: inline-flex; 
     padding: 19px 50px;
     align-items: center;
+    cursor: pointer;
+}
+
+.black-blackground:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s;
 }
 
 .info-more {

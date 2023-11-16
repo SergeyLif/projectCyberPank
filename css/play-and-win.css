@@ -46,10 +46,6 @@
     width: 100%;
 }
 
-.form-input {
-    border: none;
-}
-
 .file-wraper {
     max-width: 460px;
     flex-shrink: 0;
@@ -82,6 +78,12 @@
     line-height: normal;
 }
 
+.form-button:hover {
+    background-color: #f2ce03;
+    transform: scale(1.05);
+    transition: transform 0.4s, background-color 0.4s;
+}
+
 
 .divider {
     width: 100%;
@@ -99,6 +101,8 @@
     font-weight: 300;
     line-height: normal;
     background: #000;
+    border: none;
+    width: 100%; 
 }
 
 .attach-file {
@@ -108,6 +112,7 @@
     font-weight: 300;
     line-height: normal;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 .smm {
@@ -119,6 +124,7 @@
     line-height: normal;
     text-align: center;
     margin-top: 7px;
+    cursor: pointer;
 }
 
 .agree-personal-data {
@@ -127,6 +133,10 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+}
+
+.form-checkbox {
+    cursor: pointer;
 }
 
 .div-for-consols {
@@ -151,7 +161,16 @@
     padding-inline-start: 0px
 }
 
+.remove-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: red;
+    font-size: 1.1875rem
+   }
+
 @media (min-width: 1501px) {
+
     .ps-xbox-pictures {
         display: flex;
         flex-direction: row;
@@ -203,6 +222,7 @@
 }
 
 @media (max-width:280px) {
+
     .form-input {
         max-width: 100%;
     }

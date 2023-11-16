@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="./css/buy-game.css">
         <link rel="stylesheet" href="./css/footer.css">
         <script src="./js/background.js" defer></script>
+        <script src="./js/form.js" defer></script>
+        <script src="./js/input.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -228,8 +230,7 @@
                             <div class="wrapper-for-input">
                                 <form id="form" action="/submit" method="post"
                                     enctype="multipart/form-data">
-                                    <label for="name" class="form-label">
-                                    </label>
+                                    <label for="name" class="form-label"></label>
                                     <input type="text" id="name" name="name"
                                         class="form-input"
                                         autocomplete="name" required
@@ -246,21 +247,22 @@
                                     <div class="divider"></div>
 
                                     <div class="file-wraper">
-                                        <label for="files" class="form-label
+                                        <label for="files" id="screenshots" class="form-label
                                             attach-file"> Прикрепить скриншот
                                             <span class="smm">(.png/.jpg/.pdf)</span>
                                         </label>
                                         <input type="file" id="files"
-                                            name="files"
+                                            name="files" multiple
                                             accept=".png, .jpg, .pdf" class="form-input form-file">
                                     </div>
+
                                     <button type="submit" class="form-button">
                                         Отправить</button>
+
                                     <input type="checkbox" id="agreement"
                                         name="agreement"
                                         class="form-checkbox" required>
-                                    <label for="agreement" class="form-label
-                                        agree-personal-data">
+                                    <label for="agreement" class="form-label agree-personal-data">
                                         Согласен на обработку персональных
                                         данных</label>
                                 </form>
@@ -403,7 +405,7 @@
                                 </p>
         
                             </div>
-                            <button type="button" class="learn-more"> Подробнее</button>
+                            <a class="learn-more" href="#">Подробнее</a>
                         </div>
                     </div>
                     <div class="HP-pictures"> </div>
@@ -468,7 +470,6 @@
                         </p>
                     </div>
 
-
                     <div class="platforms">
                         <p class="blue-another-words in-div-platforms"> Выберите
                             платформу:</p>
@@ -515,9 +516,8 @@
                 </ul>
                 <nav class="official-info">
                     <ul class="info-list">
-                        <li class="info-list-items footer-text">Лицензия</li>
-                        <li class="info-list-items footer-text">Политика
-                            конфиденциальности</li>
+                        <li class="info-list-items footer-text"><a href="">Лицензия</a></li>
+                        <li class="info-list-items footer-text"><a href="">Политика конфиденциальности</a></li>
                     </ul>
                 </nav>
             </div>
