@@ -30,7 +30,6 @@ let description = document.querySelector(".description");
 
 description.onclick = function(event) {
 
-    
     if (event.target.classList.contains("blue-words")) {
         if (event.target.style.color === 'orange') {
             event.target.style.color = ''; 
