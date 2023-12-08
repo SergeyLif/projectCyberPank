@@ -1,9 +1,20 @@
+import mainManPng from "../imginWEBAPIformat/main-man-2560.webp";
+import manAndCarBackground from "../img/manAndCarBackground.jpg";
+import motoBackrgound from "../img/motoBackrgound.jpg";
+
 export function backgroundModule() {
   let backgroundPictures = [
-    "./imginWEBAPIformat/main-man-2560.webp",
-    "./img/manAndCarBackground.jpg",
-    "./img/motoBackrgound.jpg",
+    // getImageUrl("../imginWEBAPIformat/main-man-2560.webp"),
+    // getImageUrl("../img/manAndCarBackground.jpg"),
+    // getImageUrl("../img/motoBackrgound.jpg"),
+    mainManPng,
+    manAndCarBackground,
+    motoBackrgound,
   ];
+
+  // function getImageUrl(path) {
+  //   return new URL(path, import.meta.url).href;
+  // }
 
   let count = 0;
 
