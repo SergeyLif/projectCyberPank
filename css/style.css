@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
  @font-face {  
@@ -38,4 +37,17 @@ html {
     list-style-type: none;
   }
 
+
+  .button {
+    background: none;
+    border: none;
+  }
+
+  .another-color-words {
+    color: #52BEDC;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+}
 

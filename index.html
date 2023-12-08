@@ -4,109 +4,114 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="this a web page provides main information about the game CyberPunk">
+        <meta name="description" content="this a web page provides main
+            information about the game CyberPunk">
         <title>CyberPunk 2077</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css"> 
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/descriptionAndBackground.css">
         <link rel="stylesheet" href="./css/play-and-win.css">
         <link rel="stylesheet" href="./css/advantages-HP.css">
         <link rel="stylesheet" href="./css/buy-game.css">
         <link rel="stylesheet" href="./css/footer.css">
-        <script src="./js/background.js" defer></script>
-        <script src="./js/form.js" defer></script>
-        <script src="./js/input.js" defer></script>
     </head>
     <body>
         <header class="header">
-            <nav class="nav">
-                <ul class="menu-logo">
-                    <li class="menu-logo-item"> <a class="logo" href="#">
-                            <picture>
-                                <source
-                                    srcset="./img320/Cyberpunk-2077-logo-320.svg"
-                                    media="(max-width:350px)">
-                                    <source
-                                    srcset="./img/Cyberpunk_2077_logo1.svg" 
-                                    media="(min-width:351px)">
-                                <img class="img-logo"
-                                    src="./img/Cyberpunk_2077_logo1.svg" alt="logo">
-                            </picture>
-                        </a> </li>
-                </ul>
-                <ul class="social-networks">
-                    <li class="network-item"> <a class="networks" href="#">
+            <nav class="nav header__nav">
+                <div class="menu-logo nav__menu-logo">
+                    <a class="logo" href="#">
+                        <picture>
+                            <source
+                                srcset="./img320/Cyberpunk-2077-logo-320.svg"
+                                media="(max-width:350px)">
+                            <source
+                                srcset="./img/Cyberpunk_2077_logo1.svg"
+                                media="(min-width:351px)">
+                            <img class="logo__img"
+                                src="./img/Cyberpunk_2077_logo1.svg" alt="logo">
+                        </picture>
+                    </a>
+                </div>
+                <ul class="nav__social-networks">
+                    <li class="nav__item"> <a class="nav__social-link" href="#">
                             <picture>
                                 <source
                                     srcset="./img320/youtube-logo-320px.svg"
                                     media="(max-width:320px)">
-                                    <source
+                                <source
                                     srcset="./img/youtubelogo.svg"
                                     media="(min-width:321px)">
-                                <img src="./img/youtubelogo.svg"  alt="youtube logo">
+                                <img src="./img/youtubelogo.svg" alt="youtube
+                                    logo">
                             </picture>
                         </a>
                     </li>
-                    <li class="network-item"> <a class="networks" href="">
+                    <li class="nav__item"> <a class="nav__social-link" href="">
                             <picture>
                                 <source
                                     srcset="./img320/vk-logo-320px.svg"
                                     media="(max-width:320px)">
-                                    <source
-                                    srcset="./img/vklogo.svg" 
+                                <source
+                                    srcset="./img/vklogo.svg"
                                     media="(min-width:321px)">
-                                <img src="./img/vklogo.svg"  alt="vk logo">
+                                <img src="./img/vklogo.svg" alt="vk logo">
                             </picture>
                         </a>
                     </li>
-                    <li class="network-item"> <a class="networks" href="#">
+                    <li class="nav__item"> <a class="nav__social-link" href="#">
                             <picture>
                                 <source
                                     srcset="./img320/facebook-logo-320px.svg"
                                     media="(max-width:320px)">
-                                    <source
+                                <source
                                     srcset="./img/facebook-rectlogo.svg"
                                     media="(min-width:321px)">
-                                <img src="./img/facebook-rectlogo.svg"  alt="facebook logo">
+                                <img src="./img/facebook-rectlogo.svg"
+                                    alt="facebook logo">
                             </picture>
                         </a>
                     </li>
-                    <li class="network-item"> <a class="networks" href="#">
+                    <li class="nav__item"> <a class="nav__social-link" href="#">
                             <picture>
                                 <source
                                     srcset="./img320/twitter-logo-320px.svg"
                                     media="(max-width:320px)">
-                                    <source
-                                    srcset="./img/twitter-squarelogo.svg" 
+                                <source
+                                    srcset="./img/twitter-squarelogo.svg"
                                     media="(min-width:321px)">
-                                <img src="./img/twitter-squarelogo.svg"  alt="logo of youtube">
+                                <img src="./img/twitter-squarelogo.svg"
+                                    alt="logo of youtube">
                             </picture>
                         </a>
                     </li>
-                    <li class="network-item"> <a class="networks" href="#">
+                    <li class="nav__item"> <a class="nav__social-link" href="#">
                             <picture>
                                 <source
                                     srcset="./img320/twitch-logo-320px.svg"
                                     media="(max-width:320px)">
-                                    <source
+                                <source
                                     srcset="./img/twitchlogo.svg"
                                     media="(min-width:321px)">
-                                <img src="./img/twitchlogo.svg"  alt="logo of twitch">
+                                <img src="./img/twitchlogo.svg" alt="logo of
+                                    twitch">
                             </picture>
                         </a>
                     </li>
-                    <li class="network-item"> <a class="networks" href="#">
+                    <li class="nav__item"> <a class="nav__social-link" href="#">
                             <picture>
                                 <source
                                     srcset="./img320/instagram-logo-320px.svg"
                                     media="(max-width:320px)">
-                                    <source
+                                <source
                                     srcset="./img/instagram-squarelogo.svg"
                                     media="(min-width:321px)">
-                                <img src="./img/instagram-squarelogo.svg"  alt="logo of instagram">
+                                <img src="./img/instagram-squarelogo.svg"
+                                    alt="logo of instagram">
                             </picture>
                         </a>
                     </li>
@@ -116,24 +121,26 @@
         <main class="main">
             <div class="background">
                 <div class="promo-inner">
-                    <section class="yellow-info">
-                        <div class="wrapper-for-available-info">
-                             <h1 class="available-info" data-number="1"> Доступно на всех
-                                платформах</h1> </div>
-                        <div class="black-blackground"> <a class="info-more"
-                                href="#"> Узнать больше </a>
+                    <section class="background__cross-platform-info">
+                        <h1 class="available-info
+                            cross-platform-info__available-info"
+                            data-number="1">
+                            Доступно на всех платформах
+                        </h1>
+                        <div class="cross-platform-info__black-blackground">
+                            <button class="button
+                                cross-platform-info__additional-information">
+                                Узнать больше </button>
                         </div>
                     </section>
                 </div>
             </div>
             <section class="description">
-                <div class="wrapper-night-city">
-                    <h2 class="night-city">
-                        Найт-Сити изменит тебя навсегда!
-                    </h2>
-                </div>
-                <div class="description-text">
-                    <span class="blue-words">Cyberpunk 2077</span> —
+                <h2 class="description__night-city-title">
+                    Найт-Сити изменит тебя навсегда!
+                </h2>
+                <div class="description__description-text">
+                    <span class="another-color-words">Cyberpunk 2077</span> —
                     приключенческая ролевая игра, действие
                     которой происходит в мегаполисе Найт-Сити, где власть,
                     роскошь и модификации тела ценятся выше всего.
@@ -143,52 +150,58 @@
                     персонажа, исследуя открытый мир, где твои поступки влияют
                     на ход сюжета и всё, что тебя окружает.
                 </div>
-                <div class="container-with-photos">
-                    <div class="container-with-two-photos">
+                <div class="description__wrapper-for-photos">
+                    <div class="description__wrapper-first-photos">
 
-                        <ul class="description-photos">
-                            <li class="item-photos">
+                        <ul class="description__photos-list">
+                            <li class="description__item-photos">
                                 <picture>
                                     <source
                                         srcset="./img320/china-font-320.png"
                                         media="(max-width:320px)">
                                     <source
                                         srcset="./img/smallcity.png"
-                                        media="(min-width:321px) and (max-width:1024px)">
-                                        <source
+                                        media="(min-width:321px) and
+                                        (max-width:1024px)">
+                                    <source
                                         srcset="./img/smallcity.png"
                                         media="(min-width:1025px)">
-                                    <img src="./img/smallcity.png" alt="landscape on few part of night city">
-                                 </picture>
+                                    <img src="./img/smallcity.png"
+                                        alt="landscape on few part of night
+                                        city">
+                                </picture>
                             </li>
-                            <li class="item-photos">
+                            <li class="description__item-photos">
                                 <picture>
                                     <source
                                         srcset="./img320/girl-light-320.png"
                                         media="(max-width:320px)">
                                     <source
                                         srcset="./img/moto.png"
-                                        media="(min-width:321px) and (max-width:1024px)">
-                                        <source
+                                        media="(min-width:321px) and
+                                        (max-width:1024px)">
+                                    <source
                                         srcset="./img/moto.png"
                                         media="(min-width:1025px)">
-                                    <img src="./img/moto.png"  alt="moto">
+                                    <img src="./img/moto.png" alt="moto">
                                 </picture>
                             </li>
                         </ul>
                     </div>
-                    <div class="big-photo">
+                    <div class="description__big-photo">
                         <picture>
                             <source
                                 srcset="./img320/big-city-320.png"
                                 media="(max-width:320px)">
                             <source
                                 srcset="./imgWEBAPIformat1024/big-city-1024.webp"
-                                media="(min-width:321px) and (max-width:1024px)">
-                                <source
+                                media="(min-width:321px) and
+                                (max-width:1024px)">
+                            <source
                                 srcset="./img/alargecity.png"
                                 media="(min-width:1025px)">
-                            <img src="./img/alargecity.png"  alt="wonderfull landscape on a night city">
+                            <img src="./img/alargecity.png" alt="wonderfull
+                                landscape on a night city">
                         </picture>
                     </div>
                 </div>
@@ -204,22 +217,24 @@
                                 <source
                                     srcset="./img320/promotion-yellow-word-320.png"
                                     media="(max-width:499px)">
-                                    <source
+                                <source
                                     srcset="./img/promotion-picture-and-word.svg"
                                     media="(min-width:500px)">
-                                <img src="./img/promotion-picture-and-word.svg" alt="promotion">
+                                <img src="./img/promotion-picture-and-word.svg"
+                                    alt="promotion">
                             </picture>
                         </div>
                         <div class="wrapper-text-play-and-win"> <h2
                                 class="play-and-win-header"> Играй и выигрывай!</h2></div>
                         <div class="description-promotion">
-                            <p>Играй в <span class="blue-words"> Cyberpunk 2077
+                            <p>Играй в <span class="another-color-words">
+                                    Cyberpunk 2077
                                 </span>
                                 и получи
                                 возможность выиграть консоль <span
-                                    class="blue-words">
+                                    class="another-color-words">
                                     Xbox Series X </span> или Sony
-                                <span class="blue-words">PlayStation 5!</span>
+                                <span class="another-color-words">PlayStation 5!</span>
                                 Заполни
                                 форму ниже и приложи скриншот о
                                 покупке игры. Итоги розыгрыша будут подведены 1
@@ -247,13 +262,15 @@
                                     <div class="divider"></div>
 
                                     <div class="file-wraper">
-                                        <label for="files" id="screenshots" class="form-label
+                                        <label for="files" id="screenshots"
+                                            class="form-label
                                             attach-file"> Прикрепить скриншот
                                             <span class="smm">(.png/.jpg/.pdf)</span>
                                         </label>
                                         <input type="file" id="files"
                                             name="files" multiple
-                                            accept=".png, .jpg, .pdf" class="form-input form-file">
+                                            accept=".png, .jpg, .pdf"
+                                            class="form-input form-file">
                                     </div>
 
                                     <button type="submit" class="form-button">
@@ -262,7 +279,8 @@
                                     <input type="checkbox" id="agreement"
                                         name="agreement"
                                         class="form-checkbox" required>
-                                    <label for="agreement" class="form-label agree-personal-data">
+                                    <label for="agreement" class="form-label
+                                        agree-personal-data">
                                         Согласен на обработку персональных
                                         данных</label>
                                 </form>
@@ -272,10 +290,16 @@
                     <div class="div-for-consols">
                         <ul class="ps-xbox-pictures">
                             <li class="console-item">
-                               <img class="big-picture-with-consols" src="./imgWEBAPIformat1024/ps4-1024.webp"  width="460" height="456" alt="ps console picture">
+                                <img class="big-picture-with-consols"
+                                    src="./imgWEBAPIformat1024/ps4-1024.webp"
+                                    width="460" height="456" alt="ps console
+                                    picture">
                             </li>
                             <li class="console-item">
-                                <img class="big-picture-with-consols" src="./imgWEBAPIformat1024/x-box-1024.webp"  width="460" height="456" alt="x-box console picture">
+                                <img class="big-picture-with-consols"
+                                    src="./imgWEBAPIformat1024/x-box-1024.webp"
+                                    width="460" height="456" alt="x-box console
+                                    picture">
                             </li>
                         </ul>
                     </div>
@@ -295,13 +319,14 @@
 
                                 <source
                                     srcset="./img1024/screen-girl-robot-1024.png"
-                                    media="(min-width:730px) and (max-width:1240px)">
+                                    media="(min-width:730px) and
+                                    (max-width:1240px)">
 
-                                    <source
-                                    srcset="./img/screen-girl-robot-1920.png" 
+                                <source
+                                    srcset="./img/screen-girl-robot-1920.png"
                                     media="(min-width:1241px)">
 
-                                <img src="./img/screen-girl-robot-1920.png" 
+                                <img src="./img/screen-girl-robot-1920.png"
                                     alt="screen with robots">
                             </picture>
                             <ul class="list-HP-pictures">
@@ -309,35 +334,36 @@
                                             <source
                                                 srcset="./img320/hp-2-logo-320.svg"
                                                 media="(max-width:729px)">
-                                                <source
+                                            <source
                                                 srcset="./img/hp-2-logo-big.svg"
                                                 media="(min-width:730px)">
-                                            <img src="./img/hp-2-logo-big.svg" 
+                                            <img src="./img/hp-2-logo-big.svg"
                                                 alt="HP Logo">
-                                        </picture> 
+                                        </picture>
                                     </a></li>
                                 <li class="hp-item cross"> <a href=""> <picture>
                                             <source
                                                 srcset="./img320/Group-320.svg"
                                                 media="(max-width:729px)">
-                                                <source
+                                            <source
                                                 srcset="./img/Crest.svg"
                                                 media="(min-width:730px)">
-                                            <img src="./img/Crest.svg" 
+                                            <img src="./img/Crest.svg"
                                                 alt="cross">
-                                        </picture> 
+                                        </picture>
                                     </a></li>
                                 <li class="hp-item"> <a href=""> <picture>
                                             <source
                                                 srcset="./img320/Cyberpunk-2077-logo-320.svg"
                                                 media="(max-width:729px)">
-                                                <source
-                                                srcset="./img/Cyberpunk_2077_logo1.svg" 
+                                            <source
+                                                srcset="./img/Cyberpunk_2077_logo1.svg"
                                                 media="(min-width:730px)">
-                                            <img src="./img/Cyberpunk_2077_logo1.svg"  
-                                                alt="logo of hyper Pank"> 
+                                            <img
+                                                src="./img/Cyberpunk_2077_logo1.svg"
+                                                alt="logo of hyper Pank">
                                         </picture>
-                                     </a></li>
+                                    </a></li>
                             </ul>
                         </div>
                         <div class="description-immersion">
@@ -364,10 +390,11 @@
                                         <source
                                             srcset="./img320/pains-icon320.svg"
                                             media="(max-width:729px)">
-                                            <source
+                                        <source
                                             srcset="./img/pains-icon.svg"
                                             media="(min-width:730px)">
-                                        <img src="./img/pains-icon.svg"   alt="Яркие насыщенные цвета">
+                                        <img src="./img/pains-icon.svg"
+                                            alt="Яркие насыщенные цвета">
                                     </picture>
                                 </div>
                                 <p class="immersion-title-for-picture">
@@ -379,10 +406,12 @@
                                         <source
                                             srcset="./img320/stars-icon-320.svg"
                                             media="(max-width:729px)">
-                                            <source
+                                        <source
                                             srcset="./img/stars-ikon.svg"
                                             media="(min-width:730px)">
-                                        <img src="./img/stars-ikon.svg"   alt="Кристальная четкость изображения">
+                                        <img src="./img/stars-ikon.svg"
+                                            alt="Кристальная четкость
+                                            изображения">
                                     </picture>
                                 </div>
                                 <p class="immersion-title-for-picture">
@@ -394,16 +423,18 @@
                                         <source
                                             srcset="./img320/squares-icon-320.svg"
                                             media="(max-width:729px)">
-                                            <source
+                                        <source
                                             srcset="./img/squares-icon.svg"
                                             media="(min-width:730px)">
-                                        <img src="./img/squares-icon.svg"   alt="Быстрые движения и плавный геймплей">
+                                        <img src="./img/squares-icon.svg"
+                                            alt="Быстрые движения и плавный
+                                            геймплей">
                                     </picture>
                                 </div>
                                 <p class="immersion-title-for-picture">
                                     Быстрые движения и плавный геймплей
                                 </p>
-        
+
                             </div>
                             <a class="learn-more" href="#">Подробнее</a>
                         </div>
@@ -429,10 +460,11 @@
                                 <source
                                     srcset="./img320/disk-hp-320.svg"
                                     media="(max-width:500px)">
-                                    <source
+                                <source
                                     srcset="./img/disk-1920.svg"
                                     media="(min-width:501px)">
-                                <img src="./img/disk-1920.svg" alt="Яркие насыщенные цвета">
+                                <img src="./img/disk-1920.svg" alt="Яркие
+                                    насыщенные цвета">
                             </picture>
                         </div>
                         <p class="description-text-buy-game">
@@ -444,10 +476,11 @@
                                 <source
                                     srcset="./img320/box-with-code-320.svg"
                                     media="(max-width:500px)">
-                                    <source
+                                <source
                                     srcset="./img/box-with-code-1920.svg"
                                     media="(min-width:501px)">
-                                <img src="./img/box-with-code-1920.svg"  alt="Кристальная четкость изображения">
+                                <img src="./img/box-with-code-1920.svg"
+                                    alt="Кристальная четкость изображения">
                             </picture>
                         </div>
                         <p class="description-text-buy-game">
@@ -459,10 +492,11 @@
                                 <source
                                     srcset="./img320/guide-hp-320.svg"
                                     media="(max-width:500px)">
-                                    <source
+                                <source
                                     srcset="./img/guide-1920.svg"
                                     media="(min-width:501px)">
-                                <img src="./img/guide-1920.svg"  alt=" Справочник с информацией об игровом мире">
+                                <img src="./img/guide-1920.svg" alt=" Справочник
+                                    с информацией об игровом мире">
                             </picture>
                         </div>
                         <p class="description-text-buy-game">
@@ -474,14 +508,22 @@
                         <p class="blue-another-words in-div-platforms"> Выберите
                             платформу:</p>
                         <ul class="choose-platforms">
-                            <li class="platform-item"> <a href=""><img src="./img/pc-logo.svg" width="62" height="36" alt="PC">
-                            </a></li>
-                            <li class="platform-item"> <a href=""> <img src="./img/xbox-one-logo.svg"  alt="XBOX ONE">
-                            </a></li>
-                            <li class="platform-item"> <a href=""><img src="./img/stadia-logo.svg" width="58" height="51" alt="STADIA">
-                            </a></li>
-                            <li class="platform-item"> <a href=""><img src="./img/ps4-logo.svg" width="168" height="36" alt="PS4">
-                             </a></li>
+                            <li class="platform-item"> <a href=""><img
+                                        src="./img/pc-logo.svg" width="62"
+                                        height="36" alt="PC">
+                                </a></li>
+                            <li class="platform-item"> <a href=""> <img
+                                        src="./img/xbox-one-logo.svg" alt="XBOX
+                                        ONE">
+                                </a></li>
+                            <li class="platform-item"> <a href=""><img
+                                        src="./img/stadia-logo.svg" width="58"
+                                        height="51" alt="STADIA">
+                                </a></li>
+                            <li class="platform-item"> <a href=""><img
+                                        src="./img/ps4-logo.svg" width="168"
+                                        height="36" alt="PS4">
+                                </a></li>
                         </ul>
                     </div>
                 </div>
@@ -497,27 +539,28 @@
                                 <source
                                     srcset="./img320/Cyberpunk-2077-logo-320.svg"
                                     media="(max-width:650px)">
-                                    <source
+                                <source
                                     srcset="./img/Cyberpunk_2077_logo1.svg"
                                     media="(min-width:651px)">
-                                <img src="./img/Cyberpunk_2077_logo1.svg" 
+                                <img src="./img/Cyberpunk_2077_logo1.svg"
                                     alt="CyberPunk Logo">
                             </picture></a></li>
                     <li class="logo-items"><a href=""><picture>
                                 <source
                                     srcset="./img320/CD_Projekt_logo-320.svg"
                                     media="(max-width:650px)">
-                                    <source
-                                    srcset="./img/CD-Projekt-logo.svg"  
+                                <source
+                                    srcset="./img/CD-Projekt-logo.svg"
                                     media="(min-width:651px)">
-                                <img src="./img/CD-Projekt-logo.svg" 
+                                <img src="./img/CD-Projekt-logo.svg"
                                     alt="cd project logo">
                             </picture></a></li>
                 </ul>
                 <nav class="official-info">
                     <ul class="info-list">
                         <li class="info-list-items footer-text"><a href="">Лицензия</a></li>
-                        <li class="info-list-items footer-text"><a href="">Политика конфиденциальности</a></li>
+                        <li class="info-list-items footer-text"><a href="">Политика
+                                конфиденциальности</a></li>
                     </ul>
                 </nav>
             </div>
@@ -526,5 +569,7 @@
                         Cyberpunk 2077<sup>®</sup></span></p>
             </div>
         </footer>
+        
+        <script type="module" src="./main.js"></script>
     </body>
 </html>
