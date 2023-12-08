@@ -9,3 +9,4 @@ function main() {
 }
 
 main();
+console.log(123);
