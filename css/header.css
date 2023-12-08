@@ -1,12 +1,11 @@
 
 .header {
- position: absolute;  /* благодаря этой штуки блок вылетел из общего потока. И мы смогли расстянуть фон на header и на main */
- left: 0;  /* здесь учитывая что блок вылетел из потока мы создаем ему рамки чтобы она встал на месте */
- right: 0;  /* здесь учитывая что блок вылетел из потока мы создаем ему рамки чтобы она встал на месте */
+ position: absolute; 
+ left: 0;  
+ right: 0; 
 }
 
-
-.nav {
+.header__nav {
    display: flex;
    justify-content: space-between;
    margin: 0 auto;
@@ -15,7 +14,7 @@
    padding-right: 35px;
 }
 
-.social-networks {
+.nav__social-networks {
    display: flex;
    gap: 0 40px; 
    padding-top: 15px;
@@ -28,7 +27,7 @@
       align-items: center;
       justify-content:flex-start
    }
-    .menu-logo {
+    .nav__menu-logo {
       margin-bottom: -10px;  
    }
 }
@@ -36,21 +35,29 @@
 
 @media (max-width: 400px) { 
 
-   .nav {
+   .header__nav  {
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
       padding-right: 0;
    }
 
-   .social-networks {
-      gap: 30px;
+   .header__nav img {
+      max-width: 100%; 
+      height: auto;  
+   }
+
+   .nav__social-networks {
+      gap: 25px;
       padding: 0;
       align-items: flex-start;
    }
 
-   .menu-logo {
+   .nav__menu-logo {
       padding-inline-start: 0px;
       margin-bottom: -10px;  
    }
 }
+
+
+

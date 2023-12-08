@@ -1,5 +1,5 @@
 .separator-line-yellow {
-    background-image: url(/img/background-yellow-line.png);
+    background-image: url(../imginWEBAPIformat/background-yellow-line.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 4.375rem;
@@ -18,7 +18,6 @@
     padding-bottom: 70px;
     margin-left: 16.6vw;
     margin-right: 16.6vw;
-    /*    верхний, правый, нижний и левый отступы */
 }
 
 .learn-more {
@@ -36,6 +35,11 @@
     line-height: normal;
     border: none;
     margin-top: 30px;
+}
+
+.learn-more:hover{
+    transform: scale(1.05);
+    transition: transform 0.4s;
 }
 
 .wrapper-flex-photo-text {
@@ -95,12 +99,10 @@
 
 .container-grid-for-immersion {
     display: grid;
-    grid-template-columns: auto auto;
-    /* Две колонки с автоматической шириной, зависящей от содержимого */
+    grid-template-columns: auto auto;  
     max-width: 390px;
     width: 100%;
-    grid-gap: 15px 10px;
-    /* Отступы между рядами 15px и между колонами 10px */
+    grid-gap: 15px 10px; 
 }
 
 
@@ -124,7 +126,28 @@
     align-self: center;
 }
 
-@media (max-width: 729px) {
+
+@media  (min-width:910px) and (max-width:1224px)  {
+
+    .advantages-HP {
+        margin-left: 3.9vw;
+        margin-right: 3.9vw;
+    }
+
+    .screen-with-roboGirl-and-logs {
+        margin-top: 4.46%;
+    }
+
+    .list-HP-pictures {
+        flex-direction: column;
+        align-items: center;
+        padding-inline-start: 0;
+        margin: 0;
+    }
+}
+
+
+@media  (max-width: 909px) {
 
     .advantages-HP {
         margin-left: 12px;
@@ -137,7 +160,7 @@
     }
 
     .screen-with-roboGirl-and-logs {
-        align-items: flex-start;
+        align-items: center;
     }
 
     .list-HP-pictures {
@@ -161,27 +184,24 @@
     .learn-more {
         font-size: 1rem;
     }
+   }
 
-}
 
+   @media (max-width: 340px) {
 
-@media  (min-width: 730px) and  (max-width:1024px)  {
-
-    .advantages-HP {
-        margin-left: 3.9vw;
-        margin-right: 3.9vw;
+    .screen-with-roboGirl-and-logs img {
+        width: 100%;  
+        max-width: 100%;  
+        height: auto;  
     }
 
-    .screen-with-roboGirl-and-logs {
-        margin-top: 4.46%;
-    }
-
-    .list-HP-pictures {
-        flex-direction: column;
-        align-items: center;
-        padding-inline-start: 0;
-        margin: 0;
+    .hp-item .cross {
+        align-self: center;
     }
 }
 
-
+@media (max-width:280px) { 
+    .learn-more {
+        max-width: 100%;
+    }
+}

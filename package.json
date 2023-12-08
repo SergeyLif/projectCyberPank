@@ -1,0 +1,19 @@
+
+{
+  "name": "cyberpunk",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite", 
+    "build": "vite build",
+    "preview": "vite preview" 
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.27.4",
+    "@percy/webdriverio": "^3.0.1"
+  },
+  "dependencies": {
+    "vite": "^5.0.5"
+  }
+}
