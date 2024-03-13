@@ -1,4 +1,4 @@
-.last-info {
+.brand-info {
     padding-top: 13px;
     padding-bottom: 13px;
     background: #FFF;
@@ -6,25 +6,24 @@
     justify-content: space-around;
 }
 
-
-.two-logos {
+.brand-info__logos-list {
     display: flex;
     gap: 32px;
 }
 
-.official-info {
+.brand-info__official-info {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.info-list {
+.brand-info__info-list {
     display: flex;
     gap: 32px;
 }
 
 
-.last-footer {
+.brand-info__footer-info {
     background: #000;
     width: 100%;
     color: #FFF;
@@ -37,7 +36,7 @@
     padding-top: 13px;
 }
 
-.footer-text {
+.brand-info__footer-text {
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
@@ -45,7 +44,7 @@
     font-weight: 400;
 }
 
-.footer-text:hover {
+.brand-info__footer-text:hover {
     text-decoration: underline;
 }
 
@@ -53,23 +52,23 @@
 
 @media (max-width: 900px) {
 
-    .last-info {
+    .brand-info {
         flex-direction: column;
         padding-bottom: 0;
     }
 
-    .official-info {
+    .brand-info__official-info {
         background-color: #E6E6E6;
     }
 
-    .info-list {
+    .brand-info__info-list {
         flex-direction: column;
         align-items: center;
         padding-inline-start: 0;
         gap: 15px;
     }
 
-    .two-logos {
+    .brand-info__logos-list {
         flex-direction: column;
         align-items: center;
         padding-inline-start: 0;

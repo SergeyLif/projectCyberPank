@@ -1,5 +1,5 @@
-import { backgroundModule } from "./js/background.js";
-import { formModule } from "./js/form.js";
+import { backgroundModule } from "./src/js/background.js";
+import { formModule } from "./src/js/form.js";
 
 function main() {
   window.addEventListener("DOMContentLoaded", () => {
@@ -9,4 +9,3 @@ function main() {
 }
 
 main();
-console.log(1234);

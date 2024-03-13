@@ -48,8 +48,9 @@ export function formModule() {
           "afterbegin",
           `<span>${currentDocument.name} </span>`
         );
+        filesBox.className = "competition__files-box";
         let removeButton = document.createElement("button");
-        removeButton.className = "remove-button";
+        removeButton.className = "competition_remove-button";
         removeButton.textContent = "[x]";
         removeButton.onclick = () => filesBox.remove();
         filesBox.append(removeButton);
@@ -59,11 +60,4 @@ export function formModule() {
       labelForfiles.innerHTML = originalContent;
     }
   });
-
-  // 1) Ховеры у кнопок мне не понравились. Если ты их увеличиваешь, то когда ховер отпадает они также должны плавно уменьшаться.
-  // 2) Не на всех кнопках есть cursor
-  // 3) Нет состояния дизейбленной кнопки для формы, когда она не валидна
-  // 4) Теперь я вижу, что можно добавить файл, но, если я добавлю не картинку, форма ломается и больше я не могу добавить новый файл
-  // 5) После отправки формы, в алерте не показывается файл, который отправили
-  // 6) Задать вопросы по собираю данных из <form> и зачем нам тогда аякс запросы, если form и так может отправить данные на сервер
 }

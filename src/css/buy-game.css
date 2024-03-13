@@ -1,17 +1,17 @@
-.buy-game {
+.buying-game {
     display: flex;
     flex-direction: row;
 }
 
-.background-discks {
-    background-image: url(../img/discs-CP-1920.jpg);
+.buying-game__background-discks {
+    background-image: url(../img/imgAll/discs-CP-1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     width: 50%;
 }
 
-.full-list-set {
+.buying-game__full-list-set {
     width: 50%;
     background: #000;
     color: #FFF;
@@ -20,12 +20,12 @@
     padding-bottom: 70px;
 }
 
-.container-for-buy-cb {
+.buying-game__wrapper-for-texts {
     max-width: 500px;
     width: 100%;
 }
 
-.title-buy-the-game {
+.buying-game__title-buy-the-game {
     font-family: Archangelsk;
     font-size: 3.875rem;
     font-style: normal;
@@ -34,7 +34,7 @@
     margin: 0;
 }
 
-.blue-another-words {
+.buying-game__another-style-for-text {
     color: #52BEDC;
     font-size: 1.5rem;
     font-style: normal;
@@ -43,7 +43,7 @@
     margin-bottom: 15px;
 }
 
-.container-grid-for-pack-of-game {
+.buying-game__wrapper-for-pack-of-game {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 15px 10px;
@@ -51,59 +51,59 @@
     width: 100%;
 }
 
-.description-text-buy-game {
+.buying-game__description-text-buy-game {
     margin-top: 0px;
 }
 
-.platforms {
+.buying-game__platforms {
     max-width: 345px;
     width: 100%;
 }
 
-.choose-platforms {
+.buying-game__choice-platforms-list {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 50px;
     padding-left: 0;
 }
 
-.in-div-platforms {
+.buying-game__position-text {
     margin-bottom: 25px;
 }
 
 @media (min-width: 600px) and (max-width: 1100px) {
-    .background-discks {
-        background-image: url(../img1024/background-discs-1024.svg);
+    .buying-game__background-discks  {
+        background-image: url(../img/img1024/background-discs-1024.svg);
         width: 30%;
         background-position: center;
     }
 
-    .full-list-set {
+    .buying-game__full-list-set {
         width: 70%;
     }
 }
 
 @media (max-width: 599px) {
 
-    .buy-game {
+    .buying-game {
         flex-direction: column;
     }
 
-    .background-discks {
+    .buying-game__background-discks  {
         width: 100%;
         height: 200px;
     }
 
-    .title-buy-the-game {
+    .buying-game__title-buy-the-game {
         font-size: 1.875rem;
     }
 
-    .description-text-buy-game {
+    .buying-game__description-text-buy-game {
         font-size: 1rem;
         margin-block-end: 0;
     }
 
-    .full-list-set {
+    .buying-game__full-list-set {
         width: 100%;
         height: 70%;
         padding-top: 4.5vh;
@@ -112,9 +112,8 @@
     }
 }
 
-
 @media (max-width: 350px) {
-    .choose-platforms .platform-item img {
+    .buying-game__choice-platforms-list .buying-game__platform-item img {
         max-width: 100%;
         height: auto;
     }

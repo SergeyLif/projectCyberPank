@@ -2,7 +2,7 @@
     width: 100%;
     height: 4.375rem;
     margin-top: 4.375rem;
-    background-image: url(../imginWEBAPIformat/separator-line.webp);
+    background-image: url(../img/webApiFormat/separator-line.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -11,7 +11,7 @@
     background: #000;
 }
 
-.play-and-win {
+.competition {
     margin-left: 16.6vw;
     margin-right: 16.6vw;
     padding-top: 15px;
@@ -19,21 +19,18 @@
     display: flex;
 }
 
-.wrapper-text-play-and-win {
-    max-width: 570px;
-    width: 100%;
-}
-
-.play-and-win-header {
+.competition__play-and-win-header {
     color: #FFF;
     font-family: Archangelsk;
     font-style: normal;
     line-height: normal;
     font-size: 3.625rem;
     font-weight: 400;
+    max-width: 570px;
+    width: 100%;
 }
 
-.description-promotion {
+.competition__description-promotion {
     color: #FFF;
     margin-top: 25px;
     margin-bottom: 50px;
@@ -41,12 +38,14 @@
     width: 100%;
 }
 
-.wrapper-for-input {
+.competition__wrapper-for-input {
+    display: flex;
+    gap: 32px;
     max-width: 460px;
     width: 100%;
 }
 
-.file-wraper {
+.competition__file-wrapper {
     max-width: 460px;
     flex-shrink: 0;
     height: 120px;
@@ -58,7 +57,7 @@
     cursor: pointer;
 }
 
-.form-input.form-file {
+.competition__form-input-common-style.form-file {
     display: none; 
 }
 
@@ -69,20 +68,28 @@
     height: 60px;
     padding: 15px 50px;
     gap: 10px;
-    margin-top: 35px;
-    margin-bottom: 15px;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: transform 0.4s;
+    cursor: pointer;
 }
 
 .form-button:hover {
-    background-color: #f2ce03;
     transform: scale(1.05);
     transition: transform 0.4s, background-color 0.4s;
 }
 
+.competition__form-size {
+    max-width: 460px;
+    width: 460px;
+}
+
+.form-button-position {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
 
 .divider {
     width: 100%;
@@ -93,7 +100,7 @@
     margin-bottom: 35px;
 }
 
-.form-input {
+.competition__form-input-common-style {
     color: #FFF;
     font-size: 1.125rem;
     font-style: normal;
@@ -114,7 +121,7 @@
     cursor: pointer;
 }
 
-.smm {
+.competition__type-documents {
     color: #FFF;
     display: block;
     font-size: .75rem;
@@ -134,33 +141,27 @@
     line-height: normal;
 }
 
-.form-checkbox {
+.competition__form-checkbox {
     cursor: pointer;
 }
 
-.div-for-consols {
+.competition__wrapper-for-consoles-pictures {
     max-width: 790px;
     width: 100%;
     align-self: center;
 }
 
-.wrapper-for-input-and-picture {
-    display: flex;
-    gap: 32px;
-}
-
-
-.big-picture-with-consols {
+.competition__big-picture-console {
     max-width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.ps-xbox-pictures {
+.competition__ps-xbox-pictures-list {
     padding-inline-start: 0px
 }
 
-.remove-button {
+.competition_remove-button {
     border: none;
     background: transparent;
     cursor: pointer;
@@ -170,7 +171,7 @@
 
 @media (min-width: 1501px) {
 
-    .ps-xbox-pictures {
+    .competition__ps-xbox-pictures-list {
         display: flex;
         flex-direction: row;
     }
@@ -178,17 +179,16 @@
 
 @media (max-width:1500px) and (min-width:700px) {
 
-    .play-and-win {
-        display: flex;
+    .competition {
         margin-right: 3.5vw;
         margin-left: 3.5vw;
     }
 
-    .wrapper-text-play-and-win {
+    .competition__play-and-win-header  {
         max-width: 460px;
     }
 
-    .ps-xbox-pictures {
+    .competition__ps-xbox-pictures-list {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -197,37 +197,39 @@
 
 @media (max-width:699px) {
 
-    .play-and-win-header {
+    .competition__play-and-win-header  {
         font-size: 1.875rem;
     }
 
-    .description-promotion {
+    .competition__description-promotion{
         font-size: 1rem;
     }
 
-    .play-and-win {
-        display: flex;
+    .competition  {
         flex-direction: column;
         margin-right: 12px;
         margin-left: 12px;
     }
 
-    .ps-xbox-pictures {
+    .competition__ps-xbox-pictures-list {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
 }
 
 @media (max-width:280px) {
 
-    .form-input {
+    .competition__form-input-common-style {
         max-width: 100%;
     }
     .form-button { 
         padding: 15px 10px;
         font-size: 12px;
+        margin-left: 26%;
+    }
+
+    .form-button-position {
         margin-left: 26%;
     }
 }
